@@ -4,7 +4,7 @@ lambdaとは、無名関数（＝名前が付いていない関数）を表現する記法の一つです。
 
 例としてpython言語で、a,bを引数として受け取り、その和を返す関数を記述します。
 
-def fnuc(a,b):
+def fnuc(a,b):  
     return a+b
 
 この場合、関数にはfuncと命名されています。
@@ -38,29 +38,29 @@ lambdaを使うメリットは、コードを簡潔に書けることが挙げられます。
 
 lambda式を用いない場合の実装方法の例
 
-prices = [3000,2500,10500,4300]
-paymentList = []
-for price in prices:
-    if price > 3500:
-        paymentList.append(price)
- 
-paymentList.sort()
- 
-print(paymentList)
+prices = [3000,2500,10500,4300]  
+paymentList = []  
+for price in prices:  
+    if price > 3500:  
+        paymentList.append(price)  
+  
+paymentList.sort()  
+  
+print(paymentList)  
 
-実行結果
+実行結果  
 [4300, 10500]
 
 
 これをlambda式を用いて書くと以下のようになります。
 
-prices = [3000,2500,10500,4300]
-priceList = list(filter(lambda price:price > 3500, prices))
-priceList.sort()
- 
+prices = [3000,2500,10500,4300]  
+priceList = list(filter(lambda price:price > 3500, prices))  
+priceList.sort()  
+  
 print(priceList)
 
-実行結果
+実行結果  
 [4300, 10500]
 
 上記サンプルにてlambda式と合わせてlist関数とfilter関数を使用しました。
