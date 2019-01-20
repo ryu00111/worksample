@@ -4,10 +4,8 @@ lambdaとは、無名関数（＝名前が付いていない関数）を表現する記法の一つです。
 
 例としてpython言語で、a,bを引数として受け取り、その和を返す関数を記述します。
 
-`
-def fnuc(a,b):  
-    return a+b
-`
+	def fnuc(a,b):  
+return a+b
 
 この場合、関数にはfuncと命名されています。
 
